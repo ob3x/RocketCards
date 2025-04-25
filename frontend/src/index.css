@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-200: #e2fdff;
+  --color-blue-300: #BFD7FF;
+  --color-blue-400: #9BB1FF;
+  --color-blue-500: #788BFF;
+  --color-blue-shadow: #5465ffaf;
+  --color-blue-600: #5465FF;
+  --color-zinc: #101010;
+  --color-shadow: #f0f0f0;
+  --color-popup-shadow: #64646448;
+  --spacing: 1px;
+}
+
+@layer base {
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+        font-family: "Poppins", sans-serif;
+        color: #333;
+    }
+}
+
+input:focus {
+  outline: #5465FF;
+}
+
+body {
+  color: white;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: white;
+  border-color: #3b3b3b;
+  user-select: none;
+}
+
+canvas {
+  touch-action: none;
+}
+
+.screen-max-width {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  max-width: 1120px;
+}
+
+@utility button-class {
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 3px solid #ffffff; 
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@utility second-button {
+  background-color: #ffffff;
+  color: #5465FF;
+}
+
+@utility second-button_hover {
+  background-color: #5465FF;
+  color: #ffffff;
+}
+
+@utility button-class_hover {
+  background-color: #ffffff;
+  color: #5465FF;
+}
+
+@utility popup-button {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color .3s
+}
+
+@utility popup-button_hover {
+  background-color: #788BFF;
+}
+
+@utility perspective {
+  perspective: 1000px;
+}
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+@utility rotate-y-180 {
+  transform: rotateY(180deg);
+}
+@utility backface-hidden {
+  backface-visibility: hidden;
+}
