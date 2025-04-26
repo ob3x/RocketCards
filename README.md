@@ -16,7 +16,6 @@ Built with the tools and technologies:
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Testing](#testing)
 
 ## Overview
 
@@ -80,5 +79,6 @@ Run the project:
 ```bash
 cd frontend
 npm run dev
+
 cd backend
 uvicorn main:app --reload
