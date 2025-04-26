@@ -7,7 +7,7 @@ from jose import JWTError, jwt
 from datetime import datetime, timedelta
 from core.db import get_db
 from models.model import UserDB
-from schemas.users import UserCreate, User, ChangePasswordCreate
+from schemas.users import UserCreate, ChangePasswordCreate
 from schemas.token import Token
 from dotenv import load_dotenv
 import os

@@ -24,7 +24,7 @@ const DecksElement = () => {
       navigate("/decks")
     })
     .catch(err => {
-      console.log(err);
+      console.error(err);
     })
   }
 

@@ -24,13 +24,13 @@ const Learn = () => {
                         });
                         allFlashCards.push(...flashCardsResponse.data);
                     } catch (err) {
-                        console.log(err);
+                        console.error(err);
                     }
                 }
     
                 setDecks(allFlashCards);
             } catch (err) {
-                console.log(err);
+                console.error(err);
             }
         };
     

@@ -28,7 +28,7 @@ const Test = () => {
 
         })
         .catch(err => {
-            console.log(err);
+            console.error(err);
         });
     }, []);
 

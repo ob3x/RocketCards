@@ -48,7 +48,7 @@ const Settings = () => {
     })
     .catch(err => {
       setError("Niepoprawne hasło")
-      console.log(err);
+      console.error(err);
     })
   }
 
@@ -59,7 +59,7 @@ const Settings = () => {
       navigate("/login")
     })
     .catch(err => {
-      console.log(err);
+      console.error(err);
     })
   }
 

@@ -32,7 +32,7 @@ const Decks = () => {
             setFlashcardCounts(counts);
         })
         .catch(err => {
-            console.log(err);
+            console.error(err);
         });
     }, []);
 

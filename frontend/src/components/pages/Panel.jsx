@@ -13,7 +13,7 @@ const Panel = () => {
       setDecks(data)
     })
     .catch(err => {
-      console.log(err);
+      console.error(err);
     })
   }, [])
 

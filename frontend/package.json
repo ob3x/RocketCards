@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://ob3x.github.io/RocketCards",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -7,8 +7,8 @@ import { leftArrowImg, plusImg, trashImg } from '../../utils'
 const AddFlashCards = () => {
   const { deckId } = useParams()
   const { deck, loading } = useDeck(deckId)
-  const [decks, setDecks] = useState([]) // tylko do wyświetlania
-  const [updatedDecks, setUpdatedDecks] = useState([]) // edytowane dane
+  const [decks, setDecks] = useState([])
+  const [updatedDecks, setUpdatedDecks] = useState([])
   const [error, setError] = useState({});
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const AddFlashCards = () => {
 
   const addFlashCard = () => {
     const newFlashCard = {
-      id: Date.now(), // tymczasowe ID
+      id: Date.now(),
       front: "",
       back: "",
       deck_id: deck[0].id,

@@ -19,7 +19,7 @@ const Nav = ({ setIsAuthenticated }) => {
         setEmail(res.data.email);
     })
     .catch(err => {
-        console.log(err);
+        console.error(err);
     })
   }, [])
 
