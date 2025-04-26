@@ -20,11 +20,11 @@ Built with the tools and technologies:
 
 ## Overview
 
-RocketCards is a powerful developer tool designed to streamline the creation and management of interactive flashcard applications, combining a FastAPI backend with a dynamic React frontend.
+RocketCards is an application designed to help learn English and manage interactive flashcards, combining a FastAPI backend with a dynamic React frontend.
 
 ### Why RocketCards?
 
-This project empowers developers to build scalable and secure flashcard applications effortlessly. The core features include:
+This project empowers users to build scalable and secure flashcard decks effortlessly. The core features include:
 
 - :rocket: **FastAPI Backend**: Efficient web service development with asynchronous capabilities.
 - :bust_in_silhouette: **User Management**: Secure authentication and user profile management.
@@ -48,7 +48,7 @@ Build RocketCards from the source and install dependencies:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/0b3x/RocketCards
+    git clone https://github.com/ob3x/RocketCards
     ```
 
 2. Navigate to the project directory:
@@ -62,20 +62,23 @@ Build RocketCards from the source and install dependencies:
     Using **pip**:
 
     ```bash
+    cd backend
     pip install -r backend/requirements.txt
     ```
 
     Using **npm**:
 
     ```bash
+    cd frontend
     npm install
     ```
 
 ## Usage
 
-Run the project with:
-
-Using **pip**:
+Run the project:
 
 ```bash
-python {entrypoint}
+cd frontend
+npm run dev
+cd backend
+uvicorn main:app --reload
