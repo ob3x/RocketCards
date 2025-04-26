@@ -2,9 +2,9 @@
 
 _Elevate Learning with Engaging Flashcard Experiences_
 
-![last commit](https://img.shields.io/github/last-commit/0b3x/RocketCards)
+![last commit](https://img.shields.io/github/last-commit/ob3x/RocketCards)
 ![language](https://img.shields.io/badge/javascript-78.7%25-yellow)
-![languages](https://img.shields.io/github/languages/count/0b3x/RocketCards)
+![languages](https://img.shields.io/github/languages/count/ob3x/RocketCards)
 
 Built with the tools and technologies:  
 ![technologies](https://img.shields.io/badge/JSON-%23f7df1e.svg?logo=json&style=flat) ![npm](https://img.shields.io/badge/npm-%23CB3837.svg?logo=npm&logoColor=white) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-%23d71f00.svg?logo=sqlalchemy&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-%23f7df1e.svg?logo=javascript&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-%2300c7b7.svg?logo=fastapi&logoColor=white) ![React](https://img.shields.io/badge/React-%2361DAFB.svg?logo=react&logoColor=white) ![Python](https://img.shields.io/badge/Python-%233776ab.svg?logo=python&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-%23646cff.svg?logo=vite&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-%234B32C3.svg?logo=eslint&logoColor=white) ![Axios](https://img.shields.io/badge/Axios-%230074ff.svg?logo=axios&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-%231572B6.svg?logo=css3&logoColor=white) ![Pydantic](https://img.shields.io/badge/Pydantic-%2300A7E7.svg?logo=pydantic&logoColor=white)
