@@ -42,22 +42,22 @@ const Register = ({ setIsAuthenticated }) => {
 
 
   return (
-    <section className='pt-200 pb-100'>
-      <div className='flex flex-col justify-center items-center'>
-        <form action="register" className='flex flex-col p-40 rounded-2xl border-3 sm:border-blue-600' onSubmit={e => {
-          e.preventDefault()
-          registerUser()
-        }}>
-          <h2 className='text-3xl uppercase font-bold text-blue-600 text-center'>Załóż konto</h2>
-          <p className='my-15 tracking-wider text-blue-500 text-center'>Załóż darmowe konto i twórz zestawy fiszek</p>
-          <input type="text" autoComplete="username" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Nazwa użytkownika" maxLength={20} className='my-20 px-30 py-15 rounded-xl bg-blue-500'/>
-          <input type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Adres email" maxLength={30} className='my-20 px-30 py-15 rounded-xl bg-blue-500'/>
-          <input type="password" autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Hasło" className='my-20 px-30 py-15 rounded-xl bg-blue-500'/>
-          <p className='text-blue-500 my-10 font-bold'>{error && error}</p>
-          <button type="submit" className='button-class border-3 border-blue-600 font-bold second-button_hover hover:second-button mt-50'>Zarejestruj</button>
-        </form>
-      </div>
-    </section>
+      <section className='pt-200 pb-100'>
+        <div className='flex flex-col justify-center items-center'>
+          <form action="register" className='flex flex-col p-20 sm:p-40 rounded-2xl border-3 sm:border-blue-600' onSubmit={e => {
+            e.preventDefault()
+            registerUser()
+          }}>
+            <h2 className='text-3xl uppercase font-bold text-blue-600 text-center'>Załóż konto</h2>
+            <p className='my-15 tracking-wider text-blue-500 text-center'>Załóż darmowe konto i twórz zestawy fiszek</p>
+            <input type="text" autoComplete="username" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Nazwa użytkownika" maxLength={20} className='my-20 px-10 sm:px-30 py-15 rounded-xl bg-blue-500'/>
+            <input type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Adres email" maxLength={30} className='my-20 px-10 sm:px-30 py-15 rounded-xl bg-blue-500'/>
+            <input type="password" autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Hasło" className='my-20 px-10 sm:px-30 py-15 rounded-xl bg-blue-500'/>
+            <p className='text-blue-500 my-10 font-bold'>{error && error}</p>
+            <button type="submit" className='button-class border-3 border-blue-600 font-bold second-button_hover hover:second-button mt-50'>Zarejestruj</button>
+          </form>
+        </div>
+      </section>
   )
 }
 

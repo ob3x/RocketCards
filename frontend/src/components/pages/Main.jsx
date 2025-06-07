@@ -9,7 +9,7 @@ const Main = () => {
   const [flashCardNumber, setFlashCardNumber] = useState(0)
 
   return (
-    <main>
+    <>
       <section className='pt-200 px-20 pb-100 bg-gradient-to-b from-white to-gray-100'>
         <div className='flex justify-between items-center screen-max-width'>
           <div className='text-blue-500'>
@@ -96,7 +96,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-    </main>
+    </>
   )
 }
 

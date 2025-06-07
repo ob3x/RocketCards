@@ -4,7 +4,6 @@ from routes.auth import router as auth_router
 from routes.users import router as user_router
 from routes.decks import router as deck_router
 from routes.flashcards import router as flashcard_router
-from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 

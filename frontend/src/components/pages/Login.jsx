@@ -43,7 +43,7 @@ const Login = ({ setIsAuthenticated }) => {
   return (
     <section className='pt-200 pb-100'>
       <div className='flex flex-col justify-center items-center'>
-        <form action="login" className='flex flex-col p-40 rounded-2xl border-3 sm:border-blue-600' onSubmit={e => {
+        <form action="login" className='flex flex-col p-20 sm:p-40 rounded-2xl border-3 sm:border-blue-600' onSubmit={e => {
           e.preventDefault()
           loginUser()
         }}>
@@ -56,14 +56,14 @@ const Login = ({ setIsAuthenticated }) => {
             maxLength={20}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Nazwa użytkownika"
-            className="my-20 px-30 py-15 rounded-xl bg-blue-500"/>
+            className="my-20 px-10 sm:px-30 py-15 rounded-xl bg-blue-500"/>
           <input type="password" 
           value={password}
           autoComplete='current-password'
           onChange={(e) => setPassword(e.target.value)} 
           placeholder="Hasło"
           name="password"
-          className='my-20 px-30 py-15 rounded-xl bg-blue-500'/>
+          className='my-20 px-10 sm:px-30 py-15 rounded-xl bg-blue-500'/>
           <p className='text-blue-500 my-10 font-bold'>{error && error}</p>
           <button type="submit" className='button-class border-blue-600 font-bold second-button_hover hover:second-button mt-50'>Zaloguj</button>
         </form>
