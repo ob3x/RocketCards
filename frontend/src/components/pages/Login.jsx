@@ -29,7 +29,7 @@ const Login = ({ setIsAuthenticated }) => {
       })
       .catch(err => {
         if (err.status == 404) {
-          setError("Nieprawidłowy login")
+          setError("Nieprawidłowy login lub hasło")
         } else if(err.status == 401) {
           setError("Nieprawidłowe hasło")
         } else {
