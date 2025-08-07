@@ -26,8 +26,6 @@ o2auth_bearer = OAuth2PasswordBearer(tokenUrl="auth/token")
 SECRET_KEY = str(os.getenv("SUPER_SECRET_KEY"))
 ALGORITHM = "HS256"
 
-print(SECRET_KEY)
-
 @router.post("/register")
 async def register_account(user : UserCreate, db : Session = Depends(get_db)):
     try:

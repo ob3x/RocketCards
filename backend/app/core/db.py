@@ -1,7 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
+from dotenv import load_dotenv
+import os
 
-DB_URL = "postgresql://postgres:password@localhost:5432/wordwise"
+load_dotenv()
+
+DB_URL = str(os.getenv("DB_URL"))
 
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
